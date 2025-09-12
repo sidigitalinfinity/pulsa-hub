@@ -21,7 +21,11 @@ export interface Wallet {
   updatedAt: string;
 }
 
-export type ProductCategory = "pulsa" | "paket_data" | "voucher_game" | "topup_game";
+export type ProductCategory =
+  | "pulsa"
+  | "paket_data"
+  | "voucher_game"
+  | "topup_game";
 
 export interface Product {
   id: string;
@@ -51,7 +55,12 @@ export interface PriceTier {
   currency: "IDR";
 }
 
-export type OrderStatus = "created" | "processing" | "success" | "failed" | "refunded";
+export type OrderStatus =
+  | "created"
+  | "processing"
+  | "success"
+  | "failed"
+  | "refunded";
 
 export interface Order {
   id: string; // e.g. PH-202501-000123

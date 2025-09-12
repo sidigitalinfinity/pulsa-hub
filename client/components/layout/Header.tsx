@@ -17,7 +17,9 @@ export function Header() {
       <div className="container flex h-16 items-center gap-4">
         <Link to="/" className="flex items-center gap-2">
           <div className="size-8 rounded-md brand-gradient" />
-          <span className="text-lg font-extrabold tracking-tight">PulsaHub</span>
+          <span className="text-lg font-extrabold tracking-tight">
+            PulsaHub
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-1 ml-6">
@@ -28,7 +30,9 @@ export function Header() {
               className={({ isActive }) =>
                 cn(
                   "px-3 py-2 text-sm font-medium rounded-md",
-                  isActive ? "text-primary" : "text-muted-foreground hover:text-foreground",
+                  isActive
+                    ? "text-primary"
+                    : "text-muted-foreground hover:text-foreground",
                 )
               }
             >
@@ -40,7 +44,10 @@ export function Header() {
         <div className="ml-auto flex items-center gap-2">
           <div className="hidden sm:flex items-center gap-2 rounded-md border bg-background px-3 py-1.5">
             <Search className="size-4 text-muted-foreground" />
-            <Input className="h-8 border-0 focus-visible:ring-0" placeholder="Lacak pesanan / ID" />
+            <Input
+              className="h-8 border-0 focus-visible:ring-0"
+              placeholder="Lacak pesanan / ID"
+            />
           </div>
           <Button variant="ghost" size="icon" aria-label="Bahasa & Mata Uang">
             <Globe className="size-5" />

@@ -2,9 +2,24 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Gamepad2, Smartphone, Signal } from "lucide-react";
 
 const items = [
-  { icon: Smartphone, title: "Pulsa", href: "#pulsa", desc: "Isi pulsa semua operator" },
-  { icon: Signal, title: "Paket Data", href: "#paket-data", desc: "Kuota internet harian/bulanan" },
-  { icon: Gamepad2, title: "Top Up Game", href: "#topup-game", desc: "Diamonds & currency" },
+  {
+    icon: Smartphone,
+    title: "Pulsa",
+    href: "#pulsa",
+    desc: "Isi pulsa semua operator",
+  },
+  {
+    icon: Signal,
+    title: "Paket Data",
+    href: "#paket-data",
+    desc: "Kuota internet harian/bulanan",
+  },
+  {
+    icon: Gamepad2,
+    title: "Top Up Game",
+    href: "#topup-game",
+    desc: "Diamonds & currency",
+  },
 ];
 
 export function Categories() {

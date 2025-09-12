@@ -1,10 +1,26 @@
 import { ShieldCheck, Clock, HeadphonesIcon, CreditCard } from "lucide-react";
 
 const features = [
-  { icon: Clock, title: "Proses Instan", desc: "Pesanan diproses otomatis 24/7" },
-  { icon: CreditCard, title: "Pembayaran Lengkap", desc: "VA, e-wallet, QRIS, kartu kredit" },
-  { icon: ShieldCheck, title: "Aman & Terpercaya", desc: "Enkripsi modern & anti-fraud" },
-  { icon: HeadphonesIcon, title: "Dukungan 24/7", desc: "Tim support siap membantu" },
+  {
+    icon: Clock,
+    title: "Proses Instan",
+    desc: "Pesanan diproses otomatis 24/7",
+  },
+  {
+    icon: CreditCard,
+    title: "Pembayaran Lengkap",
+    desc: "VA, e-wallet, QRIS, kartu kredit",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Aman & Terpercaya",
+    desc: "Enkripsi modern & anti-fraud",
+  },
+  {
+    icon: HeadphonesIcon,
+    title: "Dukungan 24/7",
+    desc: "Tim support siap membantu",
+  },
 ];
 
 export function Features() {

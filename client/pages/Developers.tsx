@@ -1,17 +1,27 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
 export default function Developers() {
   return (
     <div className="container py-10">
       <div className="max-w-3xl">
         <Badge variant="secondary">Reseller & Developer</Badge>
-        <h1 className="mt-2 text-3xl font-extrabold tracking-tight">PulsaHub API</h1>
+        <h1 className="mt-2 text-3xl font-extrabold tracking-tight">
+          PulsaHub API
+        </h1>
         <p className="mt-2 text-muted-foreground">
-          API publik untuk membuat pesanan otomatis, cek status, menerima webhook, dan melakukan rekonsiliasi.
-          Dilengkapi API keys dan rate limits yang dapat dikonfigurasi per user.
+          API publik untuk membuat pesanan otomatis, cek status, menerima
+          webhook, dan melakukan rekonsiliasi. Dilengkapi API keys dan rate
+          limits yang dapat dikonfigurasi per user.
         </p>
       </div>
 
@@ -23,13 +33,21 @@ export default function Developers() {
           <TabsTrigger value="limits">Rate Limits</TabsTrigger>
         </TabsList>
 
-        <TabsContent value="overview" className="mt-4 grid gap-4 md:grid-cols-2">
+        <TabsContent
+          value="overview"
+          className="mt-4 grid gap-4 md:grid-cols-2"
+        >
           <Card>
             <CardContent className="p-6">
               <h3 className="font-semibold">Autentikasi</h3>
-              <p className="text-sm text-muted-foreground">Gunakan header <code>Authorization: Bearer &lt;API_KEY&gt;</code> untuk setiap request.</p>
+              <p className="text-sm text-muted-foreground">
+                Gunakan header{" "}
+                <code>Authorization: Bearer &lt;API_KEY&gt;</code> untuk setiap
+                request.
+              </p>
               <div className="mt-3 rounded-md bg-secondary p-3 text-xs">
-                curl -H "Authorization: Bearer sk_live_xxx" https://api.pulsahub.com/v1/products
+                curl -H "Authorization: Bearer sk_live_xxx"
+                https://api.pulsahub.com/v1/products
               </div>
             </CardContent>
           </Card>
@@ -100,7 +118,9 @@ export default function Developers() {
           <Card>
             <CardContent className="p-6 space-y-3">
               <h3 className="font-semibold">Webhook Events</h3>
-              <p className="text-sm text-muted-foreground">Kami mengirim update status ke URL yang Anda daftarkan.</p>
+              <p className="text-sm text-muted-foreground">
+                Kami mengirim update status ke URL yang Anda daftarkan.
+              </p>
               <pre className="rounded-md bg-secondary p-4 text-xs overflow-auto">{`POST /webhooks/orders\n{
   "order_id": "PH-202501-000123",
   "status": "success",

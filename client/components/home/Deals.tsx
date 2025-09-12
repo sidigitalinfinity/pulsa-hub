@@ -17,7 +17,9 @@ export function Deals() {
       <div className="flex items-end justify-between mb-4">
         <div>
           <h2 className="text-xl font-bold">Pilihan Terbaik Hari Ini</h2>
-          <p className="text-sm text-muted-foreground">Harga transparan • Tanpa biaya tersembunyi</p>
+          <p className="text-sm text-muted-foreground">
+            Harga transparan • Tanpa biaya tersembunyi
+          </p>
         </div>
       </div>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
@@ -28,8 +30,12 @@ export function Deals() {
                 <h3 className="font-semibold text-sm">{d.name}</h3>
                 <Badge variant="secondary">{d.tag}</Badge>
               </div>
-              <div className="mt-2 text-lg font-bold">Rp{d.price.toLocaleString("id-ID")}</div>
-              <Button className="w-full mt-3" variant="outline">Isi Sekarang</Button>
+              <div className="mt-2 text-lg font-bold">
+                Rp{d.price.toLocaleString("id-ID")}
+              </div>
+              <Button className="w-full mt-3" variant="outline">
+                Isi Sekarang
+              </Button>
             </CardContent>
           </Card>
         ))}
