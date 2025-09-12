@@ -26,6 +26,10 @@ export default function Index() {
   return (
     <>
       <Hero />
+      <div id="pulsa" />
+      <div id="paket-data" />
+      <div id="voucher-game" />
+      <div id="topup-game" />
       <Categories />
       <Deals />
       <OrderTracker />
